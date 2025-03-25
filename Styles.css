@@ -1,64 +1,92 @@
 /* ===== Experience Section Styles ===== */
 .experience {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 900px; /* Increased from 800px for better proportion */
+  margin: 60px auto; /* More vertical spacing */
+  padding: 0 30px; /* Side padding only, no top/bottom */
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 .experience h2 {
   text-align: center;
   color: #2c3e50;
-  margin-bottom: 30px;
-  font-size: 28px;
+  margin-bottom: 40px; /* Increased spacing */
+  font-size: 32px; /* Slightly larger */
+  font-weight: 600; /* Semi-bold */
 }
 
 .experience-item {
   background: white;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Slightly more rounded */
+  padding: 30px; /* More internal spacing */
+  margin: 0 auto 30px auto; /* Centered with bottom margin */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  width: 90%; /* Allows for side margins */
+  max-width: 800px; /* Constrains width on large screens */
 }
 
 .experience h3 {
-  color: #3498db;
-  margin: 0 0 5px 0;
-  font-size: 20px;
+  color: #2a7ae2; /* Brighter blue to match your site */
+  margin: 0 0 8px 0; /* Slightly more space below */
+  font-size: 22px; /* Larger heading */
+  font-weight: 600;
 }
 
 .date {
-  color: #7f8c8d;
-  font-size: 14px;
-  margin-bottom: 15px;
+  color: #666; /* Darker gray for better readability */
+  font-size: 15px; /* Slightly larger */
+  margin-bottom: 20px; /* More space before bullets */
   display: block;
 }
 
 .experience ul {
-  margin: 10px 0 0 20px;
+  margin: 15px 0 0 25px; /* More spacing around bullets */
   padding: 0;
 }
 
 .experience li {
-  margin-bottom: 8px;
-  line-height: 1.5;
-  color: #34495e;
+  margin-bottom: 10px; /* More space between bullets */
+  line-height: 1.6; /* Better readability */
+  color: #444; /* Darker text */
+  font-size: 16px; /* Slightly larger */
 }
 
 .resume-button {
   display: block;
-  width: 200px;
-  margin: 30px auto 0;
-  padding: 12px;
+  width: 220px; /* Wider button */
+  margin: 40px auto 0; /* More top margin */
+  padding: 14px; /* Taller button */
   text-align: center;
-  background: #3498db;
+  background: #2a7ae2; /* Matching your site's blue */
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
+  border-radius: 6px; /* Slightly more rounded */
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth hover effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .resume-button:hover {
-  background: #2980b9;
+  background: #1a66c2; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience {
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+  
+  .experience-item {
+    width: 100%;
+    padding: 25px;
+  }
+  
+  .experience h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 }
