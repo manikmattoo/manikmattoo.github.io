@@ -1,0 +1,64 @@
+/* ===== Experience Section Styles ===== */
+.experience {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.experience-item {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3 {
+  color: #3498db;
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
+
+.date {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.experience ul {
+  margin: 10px 0 0 20px;
+  padding: 0;
+}
+
+.experience li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #34495e;
+}
+
+.resume-button {
+  display: block;
+  width: 200px;
+  margin: 30px auto 0;
+  padding: 12px;
+  text-align: center;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.resume-button:hover {
+  background: #2980b9;
+}
