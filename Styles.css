@@ -83,10 +83,20 @@
   .experience-item {
     padding: 25px;
   }
-.round-photo {
-  display: inline-block;
+/* Force round photo - will override template styles */
+#two .about-me-photo {
   width: 350px;
-  height: 380px; /* Original proportions */
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Creates an oval shape */
-  overflow: hidden;
+  height: 350px;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  margin: 0 auto 20px;
+}
+
+#two .about-me-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center;
+}
+  
 }
