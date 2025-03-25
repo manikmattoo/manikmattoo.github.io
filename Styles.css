@@ -1,92 +1,73 @@
-/* ===== Experience Section Styles ===== */
-.experience {
-  max-width: 900px; /* Increased from 800px for better proportion */
-  margin: 60px auto; /* More vertical spacing */
-  padding: 0 30px; /* Side padding only, no top/bottom */
-  font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box; /* Ensures padding is included in width */
+/* ===== Professional Experience Section ===== */
+#experience {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif; /* Modern system stack */
 }
 
-.experience h2 {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 40px; /* Increased spacing */
-  font-size: 32px; /* Slightly larger */
-  font-weight: 600; /* Semi-bold */
+#experience h2 {
+  text-align: left; /* Changed from center to left-align */
+  margin: 0 0 30px 0;
+  color: #222; /* Darker for better contrast */
+  font-size: 32px;
+  font-weight: 700; /* Bold heading */
+  padding-left: 5px; /* Small indent */
 }
 
 .experience-item {
   background: white;
-  border-radius: 10px; /* Slightly more rounded */
-  padding: 30px; /* More internal spacing */
-  margin: 0 auto 30px auto; /* Centered with bottom margin */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
-  width: 90%; /* Allows for side margins */
-  max-width: 800px; /* Constrains width on large screens */
+  border-left: 4px solid #2a7ae2; /* Accent bar */
+  border-radius: 0 8px 8px 0; /* Rounded right side only */
+  padding: 30px;
+  margin: 0 0 30px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.experience h3 {
-  color: #2a7ae2; /* Brighter blue to match your site */
-  margin: 0 0 8px 0; /* Slightly more space below */
-  font-size: 22px; /* Larger heading */
+.experience-item h3 {
+  color: #2a7ae2;
+  margin: 0 0 5px 0;
+  font-size: 20px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 }
 
 .date {
-  color: #666; /* Darker gray for better readability */
-  font-size: 15px; /* Slightly larger */
-  margin-bottom: 20px; /* More space before bullets */
-  display: block;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.experience ul {
-  margin: 15px 0 0 25px; /* More spacing around bullets */
+#experience ul {
+  margin: 15px 0 0 20px;
   padding: 0;
+  list-style-type: square; /* Square bullets */
 }
 
-.experience li {
-  margin-bottom: 10px; /* More space between bullets */
-  line-height: 1.6; /* Better readability */
-  color: #444; /* Darker text */
-  font-size: 16px; /* Slightly larger */
-}
-
-.resume-button {
-  display: block;
-  width: 220px; /* Wider button */
-  margin: 40px auto 0; /* More top margin */
-  padding: 14px; /* Taller button */
-  text-align: center;
-  background: #2a7ae2; /* Matching your site's blue */
-  color: white;
-  text-decoration: none;
-  border-radius: 6px; /* Slightly more rounded */
-  font-weight: 600;
+#experience li {
+  margin-bottom: 12px;
+  color: #333;
   font-size: 16px;
-  transition: all 0.3s ease; /* Smooth hover effects */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.resume-button:hover {
-  background: #1a66c2; /* Slightly darker on hover */
-  transform: translateY(-2px); /* Lift effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  line-height: 1.6;
+  padding-left: 5px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .experience {
-    padding: 0 20px;
-    margin: 40px auto;
+  #experience {
+    width: 90%;
+    padding: 30px 0;
   }
   
   .experience-item {
-    width: 100%;
-    padding: 25px;
+    padding: 25px 20px;
   }
   
-  .experience h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+  .experience-item h3 {
+    flex-direction: column;
   }
 }
