@@ -83,4 +83,19 @@
   .experience-item {
     padding: 25px;
   }
+.profile-pic {
+  display: inline-block;
+  width: 350px; /* Match your current width */
+  height: 350px; /* Match your current height */
+  border-radius: 50%; /* This makes it round */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  border: 4px solid #2a7ae2; /* Optional: adds a colored border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
 }
